@@ -38,7 +38,12 @@ export const ProfilePage = () => {
                 <span className="profile__description">{user.email}</span>
               </div>
             </div>
-
+            <div className="profile__details">
+              <CodeSnippet
+                title="Decoded ID Token"
+                code={JSON.stringify(user, null, 2)}
+              />
+            </div>
           </div>
         </div>
       </div>
