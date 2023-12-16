@@ -34,9 +34,9 @@ export const ProfilePage = () => {
                 className="profile__avatar"
               />
               <div className="profile__headline">
-                <h2 className="profile__title">{user.name}</h2>  
+                <h2 className="profile__title">{user.name}</h2>
                 <span className="profile__description">{user.email}</span>
-                </div>
+              </div>
             </div>
             <div className="profile__details">
               <CodeSnippet
