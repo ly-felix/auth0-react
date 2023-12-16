@@ -35,9 +35,9 @@ export const ProfilePage = () => {
               />
               <div className="profile__headline">
                 <h2 className="profile__title">{user.name}</h2>
+                <h2 className="profile__title">{user.email}</h2>
+  
                 <span className="profile__description">{user.email}</span>
-                <h2 className="profile__title">{user.name}</h2>
-                <span className="profile__description">{user.email}</span>  
               </div>
             </div>
             <div className="profile__details">
