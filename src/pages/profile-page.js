@@ -19,7 +19,7 @@ export const ProfilePage = () => {
         <div className="content__body">
           <p id="page-description">
             <span>
-              You can see the The last login time, displayed in UTC form.
+              You can see the email and last login time of user which displayed in UTC form.
             </span>
             <span>
               <strong>Only authenticated users can access this page.</strong>
@@ -33,9 +33,9 @@ export const ProfilePage = () => {
                 className="profile__avatar"
               />
               <div className="profile__headline">
-                <h2 className="profile__title">{user.name}</h2>
+                <h2 className="profile__title">{user.nickname}</h2>
                 <span className="profile__description">{user.email}</span>
-                <span className="profile__description">{user.name}</span>
+                <span className="profile__description">{user.updated_at}</span>
               </div>
             </div>
             <div className="profile__details">
