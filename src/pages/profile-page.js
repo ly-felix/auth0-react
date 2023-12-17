@@ -44,6 +44,9 @@ export const ProfilePage = () => {
                 <span className="profile__description">
                   Login Count: {user.logins_count}
                 </span>
+                <span className="profile__description">
+                  Created_at: {user.created_at}
+                </span>
               </div>
             </div>
             <div className="profile__details">
