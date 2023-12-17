@@ -9,10 +9,10 @@ export const ProfilePage = () => {
   if (!user) {
     return null;
   }
-  const { Client } = require('pg');
+  import pg from 'pg';
 
   const conString = "postgres://iteekdcl:QD3jE70O5SdYQ1lmR1goPefoI-GjZu6n@bubble.db.elephantsql.com/iteekdcl";
-  const client = new Client({
+  const client = new pg.Client({
     connectionString: conString
   });
 
