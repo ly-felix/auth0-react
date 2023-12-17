@@ -21,7 +21,6 @@ export const ProfilePage = () => {
             <span>
               You can see the The last login time, displayed in
               Coordinated Universal Time (UTC).
-              information of an authenticated user.
             </span>
             <span>
               <strong>Only authenticated users can access this page.</strong>
