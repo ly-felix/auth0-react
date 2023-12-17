@@ -39,10 +39,10 @@ export const ProfilePage = () => {
               </div>
             </div>
             <div className="profile__details">
-              <CodeSnippet
+              {/* <CodeSnippet
                 title="Decoded ID Token"
                 code={JSON.stringify(user, null, 2)}
-              />
+              /> */}
             </div>
           </div>
         </div>
