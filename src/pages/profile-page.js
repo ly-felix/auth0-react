@@ -19,7 +19,7 @@ export const ProfilePage = () => {
         <div className="content__body">
           <p id="page-description">
             <span>
-              You can use the <strong>ID Token</strong> to get the profile
+              You can see the The last login time, displayed in Coordinated Universal Time (UTC).
               information of an authenticated user.
             </span>
             <span>
@@ -35,6 +35,7 @@ export const ProfilePage = () => {
               />
               <div className="profile__headline">
                 <h2 className="profile__title">{user.name}</h2>
+                <span className="profile__description">{user.email}</span>
                 <span className="profile__description">{user.name}</span>
               </div>
             </div>
