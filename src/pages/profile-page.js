@@ -1,6 +1,6 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
-// import { CodeSnippet } from "../components/code-snippet";
+import { CodeSnippet } from "../components/code-snippet";
 import { PageLayout } from "../components/page-layout";
 
 export const ProfilePage = () => {
@@ -39,10 +39,10 @@ export const ProfilePage = () => {
               </div>
             </div>
             <div className="profile__details">
-              {/* <CodeSnippet
+              <CodeSnippet
                 title="Decoded ID Token"
                 code={JSON.stringify(user, null, 2)}
-              /> */}
+              />
             </div>
           </div>
         </div>
