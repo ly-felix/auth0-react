@@ -2,6 +2,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
 import { CodeSnippet } from "../components/code-snippet";
 import { PageLayout } from "../components/page-layout";
+import pg from 'pg';
 
 export const ProfilePage = () => {
   const { user } = useAuth0();
@@ -9,7 +10,6 @@ export const ProfilePage = () => {
   if (!user) {
     return null;
   }
-  import pg from 'pg';
 
   const conString = "postgres://iteekdcl:QD3jE70O5SdYQ1lmR1goPefoI-GjZu6n@bubble.db.elephantsql.com/iteekdcl";
   const client = new pg.Client({
