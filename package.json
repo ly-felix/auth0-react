@@ -11,7 +11,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "net": "^1.0.2",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "tls": "^0.0.1"
   },
   "scripts": {
     "start": "cross-env PORT=4040 react-scripts start",
