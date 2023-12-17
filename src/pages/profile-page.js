@@ -9,6 +9,35 @@ export const ProfilePage = () => {
   if (!user) {
     return null;
   }
+  const { Client } = require('pg');
+
+  const conString = "postgres://iteekdcl:QD3jE70O5SdYQ1lmR1goPefoI-GjZu6n@bubble.db.elephantsql.com/iteekdcl";
+  const client = new Client({
+    connectionString: conString
+  });
+
+  client.connect((err) => {
+    if (err) {
+      console.error('Could not connect to PostgreSQL:', err);
+      return;
+    }
+
+    // Replace 'your_table_name' with the actual table name you want to count rows for
+    const query = 'SELECT COUNT(*) FROM users';
+
+    client.query(query, (err, result) => {
+      if (err) {
+        console.error('Error running query:', err);
+        client.end();
+        return;
+      }
+
+      const rowCount = result.rows[0].count;
+      console.log(`Number of rows: ${rowCount}`);
+
+      client.end();
+    });
+  });
 
   return (
     <PageLayout>
