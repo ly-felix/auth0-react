@@ -50,7 +50,8 @@ export const ProfilePage = () => {
             <span>
               You can see the email and last login time of user which displayed
               in UTC form. The dashboard that should display some user
-              information here is incomplete due to some issues.
+              information, but the connection to the database via Vercel has 
+              not been completed due to some issues.
             </span>
             <span>
               <strong>Only authenticated users can access this page.</strong>
